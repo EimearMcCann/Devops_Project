@@ -1,13 +1,15 @@
-<!-- <?php
-	define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', 'root');
-   define('DB_PASSWORD', '');//Enter localhost password here
-   define('DB_DATABASE', '');//Enter database name here
-   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+<?php
+
+            $server = mysqli_connect("localhost","root", "password");
+            
+             mysqli_select_db($server, "polo");
+      //$result = mysqli_query($server, "SELECT * FROM customer");
+      //while ($row = mysqli_fetch_array($result)) {
+        
+       //echo $row['Customer_FirstName'];
+       //echo "  ";
+       //echo $row['Customer_Surname'];
+       //echo "<br>";
+       
+      //}
 ?>
-
-//include("config.php");
-   session_start();
-//These are to be put into the serperate page
- -->
-
